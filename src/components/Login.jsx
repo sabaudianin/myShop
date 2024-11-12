@@ -16,12 +16,7 @@ export const Login = () => {
         <form className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
-              <label
-                htmlFor="email"
-                className="sr-only"
-              >
-                Email Address
-              </label>
+              <label htmlFor="email">Email Address</label>
               <input
                 id="email"
                 name="email"
@@ -32,12 +27,7 @@ export const Login = () => {
               />
             </div>
             <div>
-              <label
-                htmlFor="password"
-                className="sr-only"
-              >
-                Password
-              </label>
+              <label htmlFor="password">Password</label>
               <input
                 id="password"
                 name="password"
