@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "title": "Organic Dog Treats",
+      "slug": "organic-dog-treats",
+      "description": "Our Organic Dog Treats are made from the highest quality natural ingredients to provide your furry friend with a healthy and delicious snack. Free from artificial preservatives and additives, these treats are perfect for promoting good health and happiness in your dog.",
+      "price": 15,
+      "quantity": 200,
+      "categoryId": "2",
+      "image": "organic-dog-treats.webp",
+      "postId": "2"
+    },
+    {
+      "id": "3",
+      "title": "Comfort Plush Dog Bed",
+      "slug": "comfort-plush-dog-bed",
+      "description": "The Comfort Plush Dog Bed provides ultimate relaxation for your pet. Made from soft, high-quality materials, this bed is designed to give your dog the perfect sleeping experience. Ideal for all breeds, it's the perfect spot for your pet to rest, nap, and dream comfortably.",
+      "price": 50,
+      "quantity": 50,
+      "categoryId": "3",
+      "image": "comfort-plush-dog-bed.webp",
+      "postId": "3"
+    },
+    {
+      "id": "4",
+      "title": "Durable Chew Toy",
+      "slug": "durable-chew-toy",
+      "description": "Our Durable Chew Toy is made from non-toxic, high-quality rubber that ensures hours of fun for your dog. This chew toy is designed to withstand even the most enthusiastic chewers, making it perfect for promoting dental health and reducing destructive behavior.",
+      "price": 10,
+      "quantity": 150,
+      "categoryId": "4",
+      "image": "durable-chew-toy.webp",
+      "postId": "4"
+    },
+    {
+      "id": "5",
+      "title": "All-Natural Dog Shampoo",
+      "slug": "all-natural-dog-shampoo",
+      "description": "Keep your dog clean and fresh with our All-Natural Dog Shampoo. Made with gentle, natural ingredients, it helps maintain your dog's coat soft, shiny, and healthy. It is free of harsh chemicals, making it safe for even the most sensitive skin.",
+      "price": 18,
+      "quantity": 120,
+      "categoryId": "5",
+      "image": "all-natural-dog-shampoo.webp",
+      "postId": "5"
+    },
+    {
+      "id": "6",
+      "title": "Reflective Dog Harness",
+      "slug": "reflective-dog-harness",
+      "description": "The Reflective Dog Harness is perfect for keeping your dog safe during walks, especially at night. Featuring reflective stitching and adjustable straps, it provides both safety and comfort. Made with breathable materials, this harness ensures that your dog stays comfortable while exploring the world.",
+      "price": 30,
+      "quantity": 75,
+      "categoryId": "6",
+      "image": "reflective-dog-harness.webp",
+      "postId": "6"
+    }
+  ]
+}
