@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FavouriteButton } from "../favourite-button";
+import { FavouriteButton } from "./FavoriteButton";
 
 export const ProductCard = ({ id, image, title, description, price }) => {
   return (

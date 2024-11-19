@@ -3,7 +3,7 @@ import { Link as RouterLink, NavLink } from "react-router-dom";
 // import { fetchCategories } from "../../api/products.js";
 import { useColorMode } from "../context/ColorProvider.jsx";
 
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 
 export const Navigation = () => {
   const { theme, toggleTheme } = useColorMode();
