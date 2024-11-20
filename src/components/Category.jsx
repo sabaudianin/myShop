@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { ProductCard } from "../../components/ProductCard";
-import { fetchProducts } from "../../api/products.js";
+import { ProductCard } from "../components/ProductCard";
+import { fetchProducts } from "../api/products.js";
 
 export const Category = () => {
   const { id } = useParams();

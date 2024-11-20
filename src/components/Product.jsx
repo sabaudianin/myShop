@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchProduct } from "../../api/products.js";
-import { FavouriteButton } from "../../components/favourite-button";
+import { fetchProduct } from "../api/products";
+import { FavouriteButton } from "../components/FavoriteButton";
 
 export const Product = () => {
   const { id } = useParams();
