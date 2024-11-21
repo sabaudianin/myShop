@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { fetchCategories } from "../api/products";
 import { Hero } from "../components/Hero";
 import { ProductCard } from "../components/ProductCard";
@@ -6,19 +6,18 @@ import { ProductCard } from "../components/ProductCard";
 export const Home = () => {
   const [categories, setCategories] = useState([]);
 
-  useEffect(() => {
-    const loadCategories = async () => {
-      const fetchedCategories = await fetchCategories({
-        embedProducts: true,
-        limitProducts: 4,
-      });
-      setCategories(fetchedCategories);
-    };
-
-    loadCategories();
+  const loadCategories = useCallback(async () => {
+    const fetchedCategories = await fetchCategories({
+      embedProducts: true,
+      limitProducts: 4,
+    });
+    setCategories(fetchedCategories);
   }, []);
 
-  console.log(categories);
+  useEffect(() => {
+    loadCategories();
+  }, [loadCategories]);
+
   return (
     <>
       <Hero />

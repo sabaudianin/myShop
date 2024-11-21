@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link as RouterLink, NavLink } from "react-router-dom";
-// import { fetchCategories } from "../../api/products.js";
+import { fetchCategories } from "../api/products.js";
 import { useColorMode } from "../context/ColorProvider.jsx";
 
 import { SunIcon, MoonIcon } from "@heroicons/react/solid";
@@ -9,14 +9,14 @@ export const Navigation = () => {
   const { theme, toggleTheme } = useColorMode();
   const [categories, setCategories] = useState([]);
 
-  // const fetchData = async () => {
-  // 	const data = await fetchCategories();
-  // 	setCategories(data);
-  // };
+  const fetchData = async () => {
+    const data = await fetchCategories();
+    setCategories(data);
+  };
 
-  // useEffect(() => {
-  // 	fetchData();
-  // }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <nav className=" w-full bg-gray-100 dark:bg-gray-800 mb-4">

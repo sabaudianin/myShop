@@ -7,13 +7,13 @@ export const Category = () => {
   const { id } = useParams();
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const loadCategories = async () => {
-      const fetchedCategories = await fetchProducts({ categoryId: id });
-      setProducts(fetchedCategories);
-    };
-    loadCategories();
-  }, [id]);
+  // useEffect(() => {
+  //   const loadCategories = async () => {
+  //     const fetchedCategories = await fetchProducts({ categoryId: id });
+  //     setProducts(fetchedCategories);
+  //   };
+  //   loadCategories();
+  // }, [id]);
 
   return (
     <>
