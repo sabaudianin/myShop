@@ -28,19 +28,23 @@ export const Product = () => {
       <div className="flex flex-col sm:flex-row gap-8">
         <div className="relative flex-shrink-0 w-full max-w-sm sm:max-w-xs">
           <img
-            src={`/products/${product.image}`}
+            src={`/${product.image}`}
             alt={product.name}
             className="w-full max-h-[500px] object-cover rounded"
           />
           <FavouriteButton />
         </div>
         <div>
-          <h1 className="text-3xl font-semibold mb-4">{product.title}</h1>
-          <p className="text-base mb-4">{product.description}</p>
-          <p className="text-2xl font-medium mb-4">
+          <h1 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">
+            {product.title}
+          </h1>
+          <p className="text-base text-gray-600 dark:text-gray-300 mb-4">
+            {product.description}
+          </p>
+          <p className="text-2xl font-medium text-gray-900 dark:text-white mb-4">
             ${Number(product.price).toFixed(2)}
           </p>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+          <button className="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300">
             Dodaj do koszyka
           </button>
         </div>

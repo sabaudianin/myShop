@@ -13,6 +13,9 @@ export const fetchCategories = async ({
 
     const response = await fetch(url);
     const data = await response.json();
+    if (!Array.isArray(data)) {
+      throw new Error("Unexpected data format");
+    }
 
     if (limitProducts) {
       return data.map((category) => ({

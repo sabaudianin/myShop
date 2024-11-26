@@ -1,4 +1,34 @@
 {
+  "categories": [
+    {
+      "id": "2",
+      "name": "Dog Treats",
+      "description": "Healthy and organic treats for dogs."
+    },
+    {
+      "id": "3",
+      "name": "Dog Beds",
+      "description": "Comfortable beds for your pets."
+    },
+    {
+      "id": "4",
+      "name": "Chew Toys",
+      "description": "Durable toys for active dogs."
+    },
+    {
+      "id": "5",
+      "name": "Shampoo",
+      "description": "Gentle, all-natural dog shampoos."
+    },
+    {
+      "id": "6",
+      "name": "Harnesses",
+      "description": "Safe and reflective dog harnesses."
+    }
+  ],
+  "posts": [],
+  "orders": [],
+  "users": [],
   "products": [
     {
       "id": "2",
@@ -8,7 +38,7 @@
       "price": 15,
       "quantity": 200,
       "categoryId": "2",
-      "image": "organic-dog-treats.webp",
+      "image": "dogFood.jpg",
       "postId": "2"
     },
     {
@@ -19,7 +49,7 @@
       "price": 50,
       "quantity": 50,
       "categoryId": "3",
-      "image": "comfort-plush-dog-bed.webp",
+      "image": "dogBed.jpg",
       "postId": "3"
     },
     {
@@ -30,7 +60,7 @@
       "price": 10,
       "quantity": 150,
       "categoryId": "4",
-      "image": "durable-chew-toy.webp",
+      "image": "dogToy.jpg",
       "postId": "4"
     },
     {
@@ -41,7 +71,7 @@
       "price": 18,
       "quantity": 120,
       "categoryId": "5",
-      "image": "all-natural-dog-shampoo.webp",
+      "image": "dogBath.jpg",
       "postId": "5"
     },
     {
@@ -52,7 +82,7 @@
       "price": 30,
       "quantity": 75,
       "categoryId": "6",
-      "image": "reflective-dog-harness.webp",
+      "image": "dogHarness.jpg",
       "postId": "6"
     }
   ]

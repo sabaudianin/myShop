@@ -21,28 +21,31 @@ export const Home = () => {
   return (
     <>
       <Hero />
-      {!categories.length ? (
-        <div className="flex justify-center mt-8">
-          <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent border-solid rounded-full animate-spin"></div>
-        </div>
-      ) : (
-        categories.map((category) => (
-          <div
-            key={category.id}
-            className="mt-12"
-          >
-            <h2 className="text-2xl font-semibold mb-4">{category.name}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {category.products.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  {...product}
-                />
-              ))}
+      <section className="container mx-auto px-4 mt-12">
+        <h2 className="text-2xl font-semibold text-center mb-8">
+          Kategorie produktów
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {categories.map((category) => (
+            <div
+              key={category.id}
+              className="bg-white dark:bg-gray-600 rounded-lg shadow-md p-4 flex flex-col items-center"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {category.name}
+              </h3>
+              <div className="grid grid-cols-1 gap-4">
+                {category.products.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    {...product}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        ))
-      )}
+          ))}
+        </div>
+      </section>
     </>
   );
 };

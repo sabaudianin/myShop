@@ -7,13 +7,13 @@ export const Category = () => {
   const { id } = useParams();
   const [products, setProducts] = useState([]);
 
-  // useEffect(() => {
-  //   const loadCategories = async () => {
-  //     const fetchedCategories = await fetchProducts({ categoryId: id });
-  //     setProducts(fetchedCategories);
-  //   };
-  //   loadCategories();
-  // }, [id]);
+  useEffect(() => {
+    const loadCategories = async () => {
+      const fetchedCategories = await fetchProducts({ categoryId: id });
+      setProducts(fetchedCategories);
+    };
+    loadCategories();
+  }, [id]);
 
   return (
     <>
@@ -23,7 +23,7 @@ export const Category = () => {
         </div>
       ) : (
         <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             {products[0]?.category?.name}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
